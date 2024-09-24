@@ -7,7 +7,7 @@
 
 (i) I downloaded 2 files from https://www.ncbi.nlm.nih.gov/datasets/ to my local disk (/C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3). One file was in .tsv format named ncbi_data.tsv. It contained the data of 14 genomes after I applied 2 filters of complete genome and date till 2001. The second file had all the FASTA sequences in a zip format (FASTA.zip). I moved these 2 to my directory at ibex masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3. 
 ```
-scp -r /C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3       # followed by password input
+scp -r /C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3
 ```
 
 ![Alt text](/Screenshot1.png?raw=true)
