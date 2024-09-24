@@ -4,17 +4,17 @@
 ## 1. I made the github and added a README file in a new repository named bioe230.
 
 ## 2. 
-### (i) I downloaded 2 files from https://www.ncbi.nlm.nih.gov/datasets/ to my local disk (/C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3). One file was in .tsv format named ncbi_data.tsv. It contained the data of 14 genomes after I applied 2 filters of complete genome and date till 2001. The second file had all the FASTA sequences in a zip format. I moved it to my directory at ibex masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3. 
+### (i) I downloaded 2 files from https://www.ncbi.nlm.nih.gov/datasets/ to my local disk (/C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3). One file was in .tsv format named ncbi_data.tsv. It contained the data of 14 genomes after I applied 2 filters of complete genome and date till 2001. The second file had all the FASTA sequences in a zip format (FASTA.zip). I moved these 2 to my directory at ibex masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3. 
 ```
 scp -r /C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3       # followed by password input
 ```
-OUTPUT = PICTURE? 2 files one zip one .tsv
+OUTPUT = FASTA.zip ncbi_data.tsv transferred from local drive to ibex directory
 
-### (ii) unzip file
+### (ii) I unzipped the file in my directory.
 ```
 unzip FASTA.zip
 ```
-OUTPUT = 
+OUTPUT = It gave me ncbi_dataset
 ## 3. 
 ### (i) to find the largest genome
 ```
