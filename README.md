@@ -29,6 +29,10 @@ cut -f3 ncbi_data.tsv | grep -E 'c.*c' | wc -l
 ```bash
 cut -f3 ncbi_data.tsv | grep -E 'c.*c' | grep -vi 'coccus'
 ```
+# to find the sizes of the genome 
+```bash
+cut -f11 ncbi_data.tsv | tail -n +2 | sort -n
+```
 # to find all 2 cs but without coccus (number)
 ```bash
 cut -f3 ncbi_data.tsv | grep -E 'c.*c' | grep -vi 'coccus' | wc -l
