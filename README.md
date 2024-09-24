@@ -29,15 +29,25 @@ OUTPUT = It gave me ncbi_dataset directory in masom0b@ilogin.ibex.kaust.edu.sa:/
 ```
 cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | tail -n 1
 ```
-
 OUTPUT = Vibrio cholerae O1 biovar El Tor str. N16961    4033464
 
-(ii) to find the smallest genome 
+(ii) Size of the largest genome only
+```
+cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | tail -n 1 | awk '{print $NF}'
+```
+OUTPUT = 
+
+(iii) to find the smallest genome 
 ```
 cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | head -n 1
 ```
-
 OUTPUT = Chlamydia trachomatis D/UW-3/CX 1042519
+
+(iv) size of the smallest genome only
+```
+cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | head -n 1 | awk '{print $NF}'
+```
+OUTPUT = 
 
 ## 4. 
 
