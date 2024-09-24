@@ -1,7 +1,7 @@
 # bioE230 WEEK 3 Assignments
 
 
-## 1. I made the new repository
+## 1. I made the github and 
 
 ## 2. Moving files from local storage to ibex
 
@@ -21,18 +21,18 @@ cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | tail -n 1
 ```
 cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | head -n 1
 ```
-## 4. to find all 2 cs (number)
+## 4. 
+### to find all 2 cs (number)
 ```
-cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c' | wc -l
-```
-## to find all 2 cs but without coccus (number)
-```
-cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c' | grep -vi 'coccus' | wc -l
+cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c'| wc -l
 ```
 
-##5. to find .fna files larger than 3Mb
+### to find all 2 cs but without coccus (number)
 ```
-find . -type f -size +3M | wc -l 
-#OR 
+cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c'| grep -vi 'coccus' | wc -l
+```
+
+## 5. to find .fna files larger than 3Mb
+```
 find . -name "*.fna" -size +3M | wc -l
 ```
