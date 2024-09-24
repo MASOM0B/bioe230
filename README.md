@@ -1,7 +1,7 @@
-![image](https://github.com/user-attachments/assets/c9c7bd11-9d71-49ed-8c65-de247ff2d51f)# bioe230 WEEK 3 Assignments
+# bioe230 WEEK 3 Assignments : Data Wrangling
 
 
-## 1. I made the github and added a README file in a new repository named bioe230.
+## 1. I added a README file in a new repository named bioe230.
 
 ## 2. 
 
@@ -11,6 +11,7 @@ scp -r /C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ib
 ```
 
 ![Alt text](/Screenshot1.png?raw=true)
+
 OUTPUT = FASTA.zip ncbi_data.tsv transferred from local drive to ibex directory
 
 (ii) I unzipped the FASTA.zip in masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3.
@@ -27,29 +28,35 @@ OUTPUT = It gave me ncbi_dataset directory in masom0b@ilogin.ibex.kaust.edu.sa:/
 ```
 cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | tail -n 1
 ```
+
 OUTPUT = Vibrio cholerae O1 biovar El Tor str. N16961    4033464
 
 (ii) to find the smallest genome 
 ```
 cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | head -n 1
 ```
+
 OUTPUT = Chlamydia trachomatis D/UW-3/CX 1042519
 
 ## 4. 
+
 ### to find all 2 cs (number)
 ```
 cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c'| wc -l
 ```
+
 OUTPUT = 7
 
 ### to find all 2 cs but without coccus (number)
 ```
 cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c'| grep -vi 'coccus' | wc -l
 ```
+
 OUTPUT = 5
 
 ## 5. to find .fna files larger than 3Mb
 ```
 find . -name "*.fna" -size +3M | wc -l
 ```
+
 OUTPUT = 6
