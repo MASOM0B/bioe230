@@ -51,14 +51,14 @@ OUTPUT = 1042519
 
 ## 4. 
 
-### to find all 2 cs (number)
+### All genomes having at least 2 cs (number)
 ```
 cut -f3 ncbi_data.tsv | uniq | grep -i 'c.*c'| wc -l
 ```
 
 OUTPUT = 7
 
-### to find all 2 cs but without coccus (number)
+### All genomes having at least 2 cs but without coccus (number)
 ```
 cut -f3 ncbi_data.tsv | uniq | grep -i 'c.*c'| grep -vi 'coccus' | wc -l
 ```
