@@ -4,14 +4,14 @@
 ## 1. I made the github and added a README file in a new repository named bioe230.
 
 ## 2. 
-### Downloading the files (2) from https://www.ncbi.nlm.nih.gov/datasets/ to my local disk (/C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3) Moving files from local storage to ibex
+### (i) Downloading the files (2) from https://www.ncbi.nlm.nih.gov/datasets/ to my local disk (/C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3) Moving files from local storage to ibex
 
 ```
 scp -r /C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3       # followed by password input
 ```
 OUTPUT = 
 
-### unzip file
+### (ii) unzip file
 ```
 unzip FASTA.zip
 ```
