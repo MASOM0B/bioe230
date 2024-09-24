@@ -17,32 +17,33 @@ unzip FASTA.zip
 ```
 OUTPUT = 
 ## 3. 
-### to find largest genome
+### (i) to find the largest genome
 ```
 cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | tail -n 1
 ```
-OUTPUT = 
-### to find smallest genome 
+OUTPUT = Vibrio cholerae O1 biovar El Tor str. N16961    4033464
+
+### (ii) to find the smallest genome 
 ```
 cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | head -n 1
 ```
-OUTPUT = 
+OUTPUT = Chlamydia trachomatis D/UW-3/CX 1042519
 
 ## 4. 
 ### to find all 2 cs (number)
 ```
 cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c'| wc -l
 ```
-OUTPUT = 
+OUTPUT = 7
 
 ### to find all 2 cs but without coccus (number)
 ```
 cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c'| grep -vi 'coccus' | wc -l
 ```
-OUTPUT = 
+OUTPUT = 5
 
 ## 5. to find .fna files larger than 3Mb
 ```
 find . -name "*.fna" -size +3M | wc -l
 ```
-OUTPUT = 
+OUTPUT = 6
