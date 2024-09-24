@@ -1,4 +1,4 @@
-# bioe230 WEEK 3 Assignments
+![image](https://github.com/user-attachments/assets/c9c7bd11-9d71-49ed-8c65-de247ff2d51f)# bioe230 WEEK 3 Assignments
 
 
 ## 1. I made the github and added a README file in a new repository named bioe230.
@@ -13,13 +13,13 @@ scp -r /C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ib
 ![Alt text](/Screenshot1.png?raw=true)
 OUTPUT = FASTA.zip ncbi_data.tsv transferred from local drive to ibex directory
 
-(ii) I unzipped the file in my directory.
+(ii) I unzipped the FASTA.zip in masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3.
 
 ```
 unzip FASTA.zip
 ```
 
-OUTPUT = It gave me ncbi_dataset
+OUTPUT = It gave me ncbi_dataset directory in masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3. Such that the sequence directories were in this path ncbi_dataset -> data -> directories for FASTA files
 
 ## 3. 
 
