@@ -14,6 +14,7 @@ scp -r /C:/Users/PTCL/Desktop/1st_sem/BioE230/week_3/FASTA.zip masom0b@ilogin.ib
 
 OUTPUT = FASTA.zip ncbi_data.tsv transferred from local drive to ibex directory
 
+
 (ii) I unzipped the FASTA.zip in masom0b@ilogin.ibex.kaust.edu.sa:/home/masom0b/ncbi_dataset/week_3.
 
 ```
