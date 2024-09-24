@@ -1,4 +1,4 @@
-# bioe230 WEEK 3 Assignments : Data Wrangling
+# bioe230 WEEK 3 Assignments: Data Wrangling
 
 
 ## 1. I added a README file in a new repository named bioe230.
@@ -43,14 +43,14 @@ OUTPUT = Chlamydia trachomatis D/UW-3/CX 1042519
 
 ### to find all 2 cs (number)
 ```
-cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c'| wc -l
+cut -f3 ncbi_data.tsv | uniq | grep -i 'c.*c'| wc -l
 ```
 
 OUTPUT = 7
 
 ### to find all 2 cs but without coccus (number)
 ```
-cut -f3 ncbi_data.tsv | uniq | grep -iE 'c.*c'| grep -vi 'coccus' | wc -l
+cut -f3 ncbi_data.tsv | uniq | grep -i 'c.*c'| grep -vi 'coccus' | wc -l
 ```
 
 OUTPUT = 5
