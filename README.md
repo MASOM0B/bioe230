@@ -35,7 +35,7 @@ cut -f3 ncbi_data.tsv | grep -E 'c.*c' | grep -vi 'coccus' | wc -l
 ```
 # to find the sizes of the genome 
 ```bash
-cut -f11 ncbi_data.tsv | tail -n +2 | sort -n
+cut -f11 ncbi_data.tsv | tail -n +2 | sort -n | uniq
 ```
 # to find .fna files larger than 3Mb
 ```bash
