@@ -1,5 +1,5 @@
 # bioe230 WEEK 3
-#1 I made the new repository
+##1 I made the new repository
 
 #2 Moving files from computer to ibex
 ```bash
@@ -22,15 +22,15 @@ cut -f3,11 ncbi_data.tsv | tail -n +2 | sort -t$'\t' -k2n | head -n 1
 cut -f3 ncbi_data.tsv | grep -E 'c.*c' | wc -l
 ```
 # to find all 2 cs but without coccus (number)
-```bash
+```
 cut -f3 ncbi_data.tsv | grep -E 'c.*c' | grep -vi 'coccus' | wc -l
 ```
 # to find the sizes of the genome 
-```bash
+```
 cut -f11 ncbi_data.tsv | tail -n +2 | sort -n | uniq
 ```
 # to find .fna files larger than 3Mb
-```bash
+```
 find . -type f -size +3M | wc -l 
 #OR 
 find . -name "*.fna" -size +3M | wc -l
